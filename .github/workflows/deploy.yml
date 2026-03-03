@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
 
-# ADD THESE 3 LINES BELOW
+# THIS BLOCK BELOW FIXES THE PERMISSION ERROR
 permissions:
   contents: read
   pages: write
