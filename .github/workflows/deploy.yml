@@ -2,6 +2,13 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+
+# ADD THESE 3 LINES BELOW
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -20,4 +27,4 @@ jobs:
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4    
+        uses: actions/deploy-pages@v4
