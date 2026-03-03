@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
       // ADD THIS LINE BELOW
-      base: '/Solar/', 
+      base: '/pv-weighted-calc/', 
       server: {
         port: 3000,
         host: '0.0.0.0',
